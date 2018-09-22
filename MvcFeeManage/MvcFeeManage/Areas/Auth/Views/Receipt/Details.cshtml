@@ -1,0 +1,59 @@
+﻿@model MvcFeeManage.Areas.Auth.Models.tblReceipt
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblReceipt</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Start_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Current_Recipt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Current_Recipt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+     @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
+</p>

@@ -1,0 +1,310 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin Panel</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="~/Areas/Auth/assest/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="~/Areas/Auth/assest/fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Areas/Auth/assest/css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="~/Areas/Auth/assest/css/custom.css" rel="stylesheet">
+    <link href="~/Areas/Auth/assest/css/icheck/flat/green.css" rel="stylesheet">
+
+    <link href="../datepick.css" rel="stylesheet" />
+
+    <link href="~/Areas/Auth/assest/css/main.css" rel="stylesheet" />
+    <link href="~/Areas/Auth/assest/css/check.css" rel="stylesheet" />
+    <script src="../date.js"></script>
+    <script src="~/Areas/Auth/assest/js/jquery.min.js"></script>
+    <style>
+        #loading {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: block;
+            opacity: 0.7;
+            background-color: white;
+            z-index: 10000;
+            text-align: center;
+        }
+
+        #loading-image {
+            position: relative;
+            top: 50%;
+            left: 0px;
+            z-index: 100;
+            width: 10%;
+        }
+
+        .messagealert {
+            position: fixed;
+            top: 31px;
+            z-index: 100000;
+            padding: 0;
+            font-size: 15px;
+            right: 0px;
+        }
+    </style>
+    <link href="~/Areas/Auth/assest/css/component.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div id="loading">
+        <img id="loading-image" src="~/Areas/Auth/assest/images/load.gif" alt="Loading..." />
+    </div>
+    <div class="container body">
+
+
+        <div class="main_container">
+
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="@Url.Action("Index","Default")" class="site_title"><span>Admin</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+
+
+                    <!-- menu prile quick info -->
+                    <div class="profile">
+                        <div class="profile_pic">
+                            <img src="~/Areas/Auth/assest/images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <h1>Welcome user @(User.Identity.IsAuthenticated ? HttpContext.Current.User.Identity.Name : "Guest")</h1>
+
+                            }
+                            @*<span>Welcome,</span>
+                            <h2>Admin</h2>*@
+                        </div>
+                    </div>
+                    <!-- /menu prile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                        <div class="menu_section">
+
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a href="@Url.Action("Index","Default")"><i class="fa fa-home"></i> Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","rooms")"><i class="fa fa-desktop"></i> Rooms</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Receipt")"><i class="fa fa-desktop"></i> Receipt No.</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Courses")"><i class="fa fa-desktop"></i> Courses</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","studentdatas")"><i class="fa fa-desktop"></i> Student Registration</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","AssignCourse")"><i class="fa fa-desktop"></i> Assign Course</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Account")"><i class="fa fa-home"></i> Account</a>
+                                </li>
+                                @*<asp:ListView ID="lvpages" runat="server">
+                                        <ItemTemplate>
+                                            <li runat="server"><a href="<%#Eval(" url") %>"><i class="<%#Eval(" icon") %>"></i><%#Eval("pname") %> </a></li>
+                                        </ItemTemplate>
+                                    </asp:ListView>*@
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!-- /sidebar menu -->
+                    <!-- /menu footer buttons -->
+                    @*<div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>*@
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- top navigation -->
+                <div class="top_nav">
+
+                    <div class="nav_menu">
+                        <nav class="" role="navigation">
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="~/Areas/Auth/assest/images/img.jpg" alt="">
+                                        <span class="fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                        <li>
+                                            <a href="@Url.Action("SignOut","Account")"><i class="fa fa-sign-out pull-right"></i> Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <!-- /top navigation -->
+                <!-- page content -->
+                <div class="right_col" role="main">
+
+                    <div class="">
+                        <div class="page-title">
+                            <div class="title_left">
+                            </div>
+                            @RenderSection("Bread", required: false)
+
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="row">
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel">
+                                    <div class="x_title">
+
+                                        <div class="panel-heading">
+                                            @RenderSection("Pagename", required: false)
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+
+                                        <section class="form-horizontal form-label-left">
+                                            <div class="panel-body">
+                                                @RenderBody()
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer content -->
+                    <footer>
+                        <div class="copyright-info">
+                            <p class="pull-right">
+                                Support Contact Us : <a href="#">+91-9780551900</a>
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </footer>
+                    <!-- /footer content -->
+
+                </div>
+                <!-- /page content -->
+            </div>
+        </div>
+
+    </div>
+    <div class="messagealert" id="alert_container">
+    </div>
+
+    <script src="~/Areas/Auth/assest/js/jquery.min.js"></script>
+    <script src="~/Areas/Auth/assest/js/bootstrap.min.js"></script>
+
+    <!-- bootstrap progress js -->
+    <script src="~/Areas/Auth/assest/js/progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="~/Areas/Auth/assest/js/nicescroll/jquery.nicescroll.min.js"></script>
+    <!-- icheck -->
+    <script src="~/Areas/Auth/assest/js/icheck/icheck.min.js"></script>
+    <!-- pace -->
+    <script src="~/Areas/Auth/assest/js/pace/pace.min.js"></script>
+    <script src="~/Areas/Auth/assest/js/custom.js"></script>
+    <!-- form validation -->
+    <script src="~/Areas/Auth/assest/js/validator/validator.js"></script>
+
+    <script type="text/javascript">
+        function ShowMessage(message, messagetype) {
+            var cssclass;
+            switch (messagetype) {
+                case 'Success':
+                    cssclass = 'alert-success'
+                    break;
+                case 'Error':
+                    cssclass = 'alert-danger'
+                    break;
+                case 'Warning':
+                    cssclass = 'alert-warning'
+                    break;
+                default:
+                    cssclass = 'alert-info'
+            }
+            $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>')
+            ;
+
+            var audio = new Audio('sms.wav');
+            audio.play();
+
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function () {
+            $('#loading').hide();
+        });
+    </script>
+    <script src="~/Areas/Auth/assest/js/jQuery-imageFallback.js"></script>
+    <script>
+        $('img').imageFallback('http://placehold.it/420x310/00afef/ffffff/?text=No Image');
+    </script>
+    <script src="~/Areas/Auth/assest/js/datatables/dataTables.bootstrap.js"></script>
+    <script src="~/Areas/Auth/assest/js/datatables/jquery.dataTables.min.js"></script>
+    @*<script src="~/Areas/assets/js/dataTables/jquery.dataTables.js"></script>*@
+
+    <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+
+</body>
+</html>
