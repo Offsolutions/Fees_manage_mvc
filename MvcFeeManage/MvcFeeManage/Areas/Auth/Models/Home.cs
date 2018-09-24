@@ -76,7 +76,7 @@ namespace MvcFeeManage.Areas.Auth.Models
         public Nullable<System.DateTime> Date { get; set; }
         public string discount { get; set; }
         public bool Status { get; set; }
-    }   
+    }
     public class Course
     {
         [Key]
@@ -84,7 +84,7 @@ namespace MvcFeeManage.Areas.Auth.Models
         public string CourseId { get; set; }
         public string CourseName { get; set; }
         public string Fees { get; set; }
-        public virtual ICollection<Student_Course> Student_Course { get; set; }
+        //public virtual ICollection<Student_Course> Student_Course { get; set; }
     }
     public class Student_Course
     {

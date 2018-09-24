@@ -22,6 +22,7 @@ namespace MvcFeeManage.Migrations
         public override void Down()
         {
             DropTable("dbo.tblrooms");
+            DropTable("dbo.Student_Course");
         }
     }
 }

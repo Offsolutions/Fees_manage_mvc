@@ -187,7 +187,11 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+ 
+        public ActionResult View(int roll)
+        {
+            return RedirectToAction("Index", "AssignCourse", new { roll = roll });
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

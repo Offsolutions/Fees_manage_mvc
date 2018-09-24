@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace MvcFeeManage.Areas.Auth.Models
 {
-    public class dbcontext:DbContext
+    public class dbcontext : DbContext
     {
         public dbcontext() : base("dbcontext")
         {
@@ -21,10 +21,11 @@ namespace MvcFeeManage.Areas.Auth.Models
 
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblstudentdata> tblstudentdata { get; set; }
 
-        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblreceptionist> tblreceptionist { get; set; }
-        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.Student_Course> Student_Course { get; set; }
+        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblreceptionist> tblreceptionists { get; set; }
+   
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.Fees_Master> Fees_Master { get; set; }
 
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblReceipt> tblReceipt { get; set; }
+        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.Student_Course> Student_Course { get; set; }
     }
 }

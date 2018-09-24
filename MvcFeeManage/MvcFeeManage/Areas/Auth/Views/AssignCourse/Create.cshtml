@@ -1,10 +1,9 @@
 ﻿@model MvcFeeManage.Areas.Auth.Models.Student_Course
 
 @{
-  ViewBag.Title = "Create";
-
-   
-   Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
+    //int rol = ViewBag.rollno;
 }
 
 <h2>Create</h2>
@@ -20,7 +19,7 @@
         <div class="form-group">
             @Html.Label("RollNo", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.LabelFor(model => model.RollNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.Label(ViewData["rollno"].ToString())
                 @Html.ValidationMessageFor(model => model.RollNo, "", new { @class = "text-danger" })
             </div>
         </div>

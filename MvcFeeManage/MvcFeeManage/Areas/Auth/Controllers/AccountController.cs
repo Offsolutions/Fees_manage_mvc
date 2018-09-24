@@ -19,7 +19,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // GET: Auth/Account
         public ActionResult Index()
         {
-            return View(db.tblreceptionist.ToList());
+            return View(db.tblreceptionists.ToList());
         }
 
         // GET: Auth/Account/Details/5
@@ -29,7 +29,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            tblreceptionist tblreceptionist = db.tblreceptionist.Find(id);
+            tblreceptionist tblreceptionist = db.tblreceptionists.Find(id);
             if (tblreceptionist == null)
             {
                 return HttpNotFound();
@@ -52,21 +52,21 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         {
             if (ModelState.IsValid)
             {
-                tblreceptionist recp = db.tblreceptionist.FirstOrDefault();
-                if (recp == null)
-                {
-                    tblreceptionist.rid = "r_1001";
-                }
-                else
-                {
-                    var valc = db.tblreceptionist.Max(x => x.rid);
+                //tblreceptionist recp = db.tblreceptionists.FirstOrDefault();
+                //if (recp == null)
+                //{
+                //    tblreceptionist.rid = "r_1001";
+                //}
+                //else
+                //{
+                //    var valc = db.tblreceptionists.Max(x => x.rid);
 
-                    string[] rec = valc.Split('_');
-                    var ab = rec[1].ToString();
-                    tblreceptionist.rid = (Convert.ToInt32(ab) + 1).ToString();
-                }
+                //    string[] rec = valc.Split('_');
+                //    var ab = rec[1].ToString();
+                //    tblreceptionist.rid = (Convert.ToInt32(ab) + 1).ToString();
+                //}
                 tblreceptionist.image = Help.uploadfile(file);
-                db.tblreceptionist.Add(tblreceptionist);
+                db.tblreceptionists.Add(tblreceptionist);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -81,7 +81,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            tblreceptionist tblreceptionist = db.tblreceptionist.Find(id);
+            tblreceptionist tblreceptionist = db.tblreceptionists.Find(id);
             img = tblreceptionist.image;
             if (tblreceptionist == null)
             {
@@ -127,7 +127,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            tblreceptionist tblreceptionist = db.tblreceptionist.Find(id);
+            tblreceptionist tblreceptionist = db.tblreceptionists.Find(id);
             img = tblreceptionist.image;
             if (tblreceptionist == null)
             {
@@ -141,7 +141,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            tblreceptionist tblreceptionist = db.tblreceptionist.Find(id);
+            tblreceptionist tblreceptionist = db.tblreceptionists.Find(id);
             img = tblreceptionist.image;
             #region delete file
             string fullPath = Request.MapPath("~/UploadedFiles/" + img);
@@ -156,7 +156,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 }
             }
             #endregion
-            db.tblreceptionist.Remove(tblreceptionist);
+            db.tblreceptionists.Remove(tblreceptionist);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -178,7 +178,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         public ActionResult Login(tblreceptionist model, string returnUrl)
         {
             dbcontext db = new dbcontext();
-            var dataItem = db.tblreceptionist.Where(x => x.login == model.login && x.password == model.password).First();
+            var dataItem = db.tblreceptionists.Where(x => x.login == model.login && x.password == model.password).First();
             if (dataItem != null)
             {
                 FormsAuthentication.SetAuthCookie(dataItem.login, false);
