@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace MvcFeeManage.Areas.Auth.Controllers
 {
     public class DefaultController : Controller
@@ -13,5 +14,6 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         {
             return View();
         }
+    
     }
 }

@@ -59,16 +59,16 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 student_Course.Uid = Session["User"].ToString();
                 student_Course.RollNo = rollno;
                 db.Student_Course.Add(student_Course);
-                db.SaveChanges();
+                db.SaveChanges();  
 
-                Fees_Master feemaster = new Fees_Master();
+                Fees_Master feemaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == student_Course.RollNo);
                 feemaster.RollNo = student_Course.RollNo;
                 feemaster.Date = System.DateTime.Now;
-                feemaster.CourseId = student_Course.CourseId;
+                //feemaster.CourseId = student_Course.CourseId;
                 feemaster.AlertDate = System.DateTime.Now.AddDays(2);
                 feemaster.Status = true;
-                feemaster.TotalFees = Convert.ToInt32(student_Course.Fees);
-                db.Fees_Master.Add(feemaster);
+                feemaster.TotalFees += Convert.ToInt32(student_Course.Fees);
+                db.Entry(feemaster).State = EntityState.Modified; 
                 db.SaveChanges();
                 return RedirectToAction("Index",new { roll = rollno });
             }
@@ -107,6 +107,16 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 student_Course.Uid = Session["User"].ToString();
                 db.Entry(student_Course).State = EntityState.Modified;
                 db.SaveChanges();
+
+                Fees_Master feemaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == student_Course.RollNo);
+                feemaster.RollNo = student_Course.RollNo;
+                feemaster.Date = System.DateTime.Now;
+                //feemaster.CourseId = student_Course.CourseId;
+                feemaster.AlertDate = System.DateTime.Now.AddDays(2);
+                feemaster.Status = true;
+                feemaster.TotalFees += Convert.ToInt32(student_Course.Fees);
+                db.Entry(feemaster).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index", new { roll = rollno });
             }
             return View(student_Course);
@@ -137,9 +147,17 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             rollno = student_Course.RollNo;
             db.Student_Course.Remove(student_Course);
             db.SaveChanges();
-            Fees_Master feemaster = db.Fees_Master.SingleOrDefault(x => x.RollNo == rollno);
-            db.Fees_Master.Remove(feemaster);
+
+            Fees_Master feemaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == student_Course.RollNo);
+            feemaster.RollNo = student_Course.RollNo;
+            feemaster.Date = System.DateTime.Now;
+            //feemaster.CourseId = student_Course.CourseId;
+            feemaster.AlertDate = System.DateTime.Now.AddDays(2);
+            feemaster.Status = true;
+            feemaster.TotalFees -= Convert.ToInt32(student_Course.Fees);
+            db.Entry(feemaster).State = EntityState.Modified;
             db.SaveChanges();
+
             return RedirectToAction("Index", new { roll = rollno });
         }
 

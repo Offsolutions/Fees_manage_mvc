@@ -75,7 +75,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 Fees_Master feemaster = new Fees_Master();
                 feemaster.RollNo = tblstudentdata.rollno;
                 feemaster.Date = tblstudentdata.date;
-                feemaster.CourseId = CourseId;
+                //feemaster.CourseId = CourseId;
                 feemaster.AlertDate = System.DateTime.Now.AddDays(2);
                 feemaster.discount = tblstudentdata.discount;
                 feemaster.Status = true;

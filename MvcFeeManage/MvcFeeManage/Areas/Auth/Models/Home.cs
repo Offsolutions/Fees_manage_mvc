@@ -69,7 +69,7 @@ namespace MvcFeeManage.Areas.Auth.Models
         public int RollNo { get; set; }
         public int TotalFees { get; set; }
         public int PaidFees { get; set; }
-        public string CourseId { get; set; }
+        //public string CourseId { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> AlertDate { get; set; }
@@ -113,7 +113,9 @@ namespace MvcFeeManage.Areas.Auth.Models
         public int RollNo { get; set; }
         public string CourseId { get; set; }
         public string ReciptNo { get; set; }
-        public DateTime Date { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public Nullable<System.DateTime> Date { get; set; }
         public string Particular { get; set; }
         public int Amount { get; set; }
         public bool Active { get; set; }

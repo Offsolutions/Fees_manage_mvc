@@ -213,6 +213,8 @@
     <Compile Include="Areas\Auth\Controllers\AssignCourseController.cs" />
     <Compile Include="Areas\Auth\Controllers\CoursesController.cs" />
     <Compile Include="Areas\Auth\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Auth\Controllers\DepositController.cs" />
+    <Compile Include="Areas\Auth\Controllers\LogsController.cs" />
     <Compile Include="Areas\Auth\Controllers\ReceiptController.cs" />
     <Compile Include="Areas\Auth\Controllers\roomsController.cs" />
     <Compile Include="Areas\Auth\Controllers\studentdatasController.cs" />
@@ -731,6 +733,8 @@
     <Content Include="Areas\Auth\Views\AssignCourse\Details.cshtml" />
     <Content Include="Areas\Auth\Views\AssignCourse\Edit.cshtml" />
     <Content Include="Areas\Auth\Views\AssignCourse\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Logs\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Deposit\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
