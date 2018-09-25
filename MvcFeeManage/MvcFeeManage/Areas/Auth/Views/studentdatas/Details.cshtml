@@ -12,7 +12,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.rollno)
+            Roll No.
         </dt>
 
         <dd>
@@ -20,7 +20,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.name)
+            Name
         </dt>
 
         <dd>
@@ -28,15 +28,31 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.dob)
+            DOB
         </dt>
+
+        <dt>
+            Gender
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gender)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
 
         <dd>
             @Html.DisplayFor(model => model.dob)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.fathername)
+            Father Name
         </dt>
 
         <dd>
@@ -44,7 +60,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.address)
+            Address
         </dt>
 
         <dd>
@@ -52,7 +68,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.phone)
+            Phone
         </dt>
 
         <dd>
@@ -60,7 +76,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.fatherphn)
+            Father's Contact
         </dt>
 
         <dd>
@@ -68,7 +84,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.language)
+            Language
         </dt>
 
         <dd>
@@ -76,7 +92,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.board)
+            Board
         </dt>
 
         <dd>
@@ -84,7 +100,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.qualification)
+            Qualification
         </dt>
 
         <dd>
@@ -92,7 +108,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.coaching)
+            Prior Coaching
         </dt>
 
         <dd>
@@ -100,7 +116,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.institutename)
+            Institute name
         </dt>
 
         <dd>
@@ -108,7 +124,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.type)
+            Type
         </dt>
 
         <dd>
@@ -116,7 +132,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.refferedby)
+            Reffered By
         </dt>
 
         <dd>
@@ -124,21 +140,12 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.image)
+            Student Image
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.image)
+            <img src="~/UploadedFiles/model.image" width="70" />
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.uid)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.uid)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.Status)
         </dt>
@@ -148,7 +155,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.username)
+            User Name
         </dt>
 
         <dd>
@@ -156,7 +163,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.password)
+            Password
         </dt>
 
         <dd>
@@ -164,48 +171,32 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.gender)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.gender)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.remarks)
+            Remarks
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.remarks)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.email)
-        </dt>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.discount)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.email)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.discount)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.discount)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.date)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.discount)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.date)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.date)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.date)
+            </dd>*@
 
     </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-     @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
 </p>

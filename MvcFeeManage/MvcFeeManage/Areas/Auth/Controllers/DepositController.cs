@@ -11,6 +11,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
     public class DepositController : Controller
     {
         public dbcontext db = new dbcontext();
+        public static int rollno;
         // GET: Auth/Deposit
         public ActionResult Index()
         {
@@ -24,9 +25,34 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         }
 
         // GET: Auth/Deposit/Create
-        public ActionResult Create()
+        public ActionResult Create(int roll)
         {
-            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
+            rollno = roll;
+            var asigncours = db.Student_Course.Where(x => x.RollNo == roll && x.Status == true).FirstOrDefault().CourseId;
+            var courses = db.Courses.Where(x => x.CourseId == asigncours);
+     
+            ViewBag.CourseId = new SelectList(courses, "CourseId", "CourseName");
+            ViewBag.RollNo = roll;
+            Recipt_Details receiptd = db.Recipt_Details.FirstOrDefault();
+            if (receiptd == null)
+            {
+                var receip = db.tblReceipt.FirstOrDefault();
+                if (receip == null)
+                {
+                        ViewBag.Receipt = 1;
+                }
+                else
+                {
+                    var recp = receip.Start_no;
+                    ViewBag.Receipt = recp;
+                }
+            }
+            else
+            {
+                var ab = db.Recipt_Details.Max(x => x.ReciptNo);
+                ViewBag.Receipt = Convert.ToInt32(ab) + 1;
+            }
+
             return View();
         }
 

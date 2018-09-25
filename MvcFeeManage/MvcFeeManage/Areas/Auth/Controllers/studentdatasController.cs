@@ -192,6 +192,10 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         {
             return RedirectToAction("Index", "AssignCourse", new { roll = roll });
         }
+        public ActionResult Deposit(int roll)
+        {
+            return RedirectToAction("Create", "Deposit", new { roll = roll });
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

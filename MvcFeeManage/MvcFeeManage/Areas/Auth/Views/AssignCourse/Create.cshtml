@@ -19,7 +19,7 @@
         <div class="form-group">
             @Html.Label("RollNo", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Label(ViewData["rollno"].ToString())
+                @Html.Label(ViewData["rollno"].ToString(), htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.RollNo, "", new { @class = "text-danger" })
             </div>
         </div>

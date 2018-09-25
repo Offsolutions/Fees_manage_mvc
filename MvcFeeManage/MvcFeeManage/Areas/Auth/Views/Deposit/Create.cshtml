@@ -1,10 +1,22 @@
 ﻿@model MvcFeeManage.Areas.Auth.Models.Recipt_Details
-
+@using MvcFeeManage.Areas.Auth.Models;
 @{
     ViewBag.Title = "Create";
-
-
     Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
+    dbcontext db = new dbcontext();
+    int rolno = Convert.ToInt32(ViewData["rollno"].ToString());
+    // int reg = Convert.ToInt32(ViewData["rollno"].ToString());
+    //var cour = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).GroupJoin(db.Courses, c => c.CourseId, x => x.CourseId,
+    //(c, x) => c).ToList();
+
+    List<Student_Course> stucor = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).ToList();
+
+    List<tblstudentdata> stu = db.tblstudentdata.Where(x => x.rollno == rolno).ToList();
+    var name = stu.FirstOrDefault().name;
+    //DateTime datefrom = Convert.ToDateTime(stucor.FirstOrDefault().Admitdate);
+    //DateTime dateto = Convert.ToDateTime(stucor.FirstOrDefault().enddate);
+    List<Fees_Master> fees = db.Fees_Master.Where(x => x.RollNo == rolno).ToList();
+    int pending = fees.FirstOrDefault().TotalFees - fees.FirstOrDefault().PaidFees;
 }
 
 <h2>Create</h2>
@@ -20,18 +32,23 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ReciptNo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ReciptNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.Label(ViewData["Receipt"].ToString(), htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ReciptNo, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group">
             @Html.LabelFor(model => model.RollNo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.RollNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.Label(ViewData["rollno"].ToString(), htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.RollNo, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <div class="form-group">
+            @Html.Label("Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Label(name, htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
         <div class="form-group">
             @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -49,35 +66,26 @@
         </div>
 
         <div class="form-group">
-            @Html.Label("Fee_Period", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.Label("Total Fee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input id="from" type="date" name="datefrom" readonly class="form-control" /> <input id="to" type="date" name="dateto" readonly  class="form-control" />
-                @Html.ValidationMessageFor(model => model.ReciptNo, "", new { @class = "text-danger" })
+               @Html.Label(fees.FirstOrDefault().TotalFees.ToString(), htmlAttributes: new { @class = "form-control" })
+
             </div>
         </div>
 
         <div class="form-group">
-            @Html.Label("Monthly Fee", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.Label("Paid Fee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input id="Monthly" type="text" name="Monthly" class="form-control" readonly />
-
+                @Html.Label(fees.FirstOrDefault().PaidFees.ToString(), htmlAttributes: new { @class = "form-control" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.Label("Pending Fee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input id="Pending" type="text" name="Pending" class="form-control" readonly />
+                @Html.Label(pending.ToString(), htmlAttributes: new { @class = "form-control" })
             </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Particular, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Particular, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Particular, "", new { @class = "text-danger" })
-            </div>
-        </div>
+        </div>        
 
         <div class="form-group">
             @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -94,9 +102,15 @@
             </div>
         </div>
         <div class="form-group">
+            @Html.Label("Balance", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Label(pending.ToString(), htmlAttributes: new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
             @Html.Label("Alert Date", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input id="Alert" type="date" name="Alert" class="form-control" />
+                <input id="Alert" type="date" name="Alert" class="form-control" value="@System.DateTime.Now.ToString("MM/dd/yyyy")" />
             </div>
         </div>
 
@@ -113,7 +127,7 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-danger" />
-                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
+                @*@Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })*@
 
             </div>
         </div>
