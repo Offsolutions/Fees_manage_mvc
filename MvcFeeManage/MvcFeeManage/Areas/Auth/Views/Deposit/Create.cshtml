@@ -1,32 +1,31 @@
 ﻿@model MvcFeeManage.Areas.Auth.Models.Recipt_Details
 @using MvcFeeManage.Areas.Auth.Models;
 @{
-    ViewBag.Title = "Create";
-    Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
-    dbcontext db = new dbcontext();
-    int rolno = Convert.ToInt32(ViewData["rollno"].ToString());
-    // int reg = Convert.ToInt32(ViewData["rollno"].ToString());
-    //var cour = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).GroupJoin(db.Courses, c => c.CourseId, x => x.CourseId,
-    //(c, x) => c).ToList();
+                ViewBag.Title = "Create";
+                Layout = "~/Areas/Auth/Views/Shared/Layout.cshtml";
+                dbcontext db = new dbcontext();
+                int rolno = Convert.ToInt32(ViewData["rollno"].ToString());
+                // int reg = Convert.ToInt32(ViewData["rollno"].ToString());
+                //var cour = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).GroupJoin(db.Courses, c => c.CourseId, x => x.CourseId,
+                //(c, x) => c).ToList();
 
-    List<Student_Course> stucor = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).ToList();
+                List<Student_Course> stucor = db.Student_Course.Where(x => x.RollNo == rolno).Where(x => x.Status == true).ToList();
 
-    List<tblstudentdata> stu = db.tblstudentdata.Where(x => x.rollno == rolno).ToList();
-    var name = stu.FirstOrDefault().name;
-    //DateTime datefrom = Convert.ToDateTime(stucor.FirstOrDefault().Admitdate);
-    //DateTime dateto = Convert.ToDateTime(stucor.FirstOrDefault().enddate);
-    List<Fees_Master> fees = db.Fees_Master.Where(x => x.RollNo == rolno).ToList();
-    int pending = fees.FirstOrDefault().TotalFees - fees.FirstOrDefault().PaidFees;
-}
+                List<tblstudentdata> stu = db.tblstudentdata.Where(x => x.rollno == rolno).ToList();
+                var name = stu.FirstOrDefault().name;
+                List<Fees_Master> fees = db.Fees_Master.Where(x => x.RollNo == rolno).ToList();
+                int pending = fees.FirstOrDefault().TotalFees - (fees.FirstOrDefault().PaidFees+ Convert.ToInt32(fees.FirstOrDefault().discount));
+                int paidfee = fees.FirstOrDefault().PaidFees + Convert.ToInt32(fees.FirstOrDefault().discount);
+            }
 
 <h2>Create</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Create", "Deposit", FormMethod.Post, new { name = "myform", onsubmit = "return validateForm()" }))
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Recipt_Details</h4>
+        <h4>Fee Deposit</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -76,21 +75,23 @@
         <div class="form-group">
             @Html.Label("Paid Fee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Label(fees.FirstOrDefault().PaidFees.ToString(), htmlAttributes: new { @class = "form-control" })
+                @Html.Label(paidfee.ToString(), htmlAttributes: new { @class = "form-control" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.Label("Pending Fee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Label(pending.ToString(), htmlAttributes: new { @class = "form-control" })
+                <input id="Pending" type="text" name="Pending" class="form-control" value="@pending.ToString()" readonly />
+                @*@Html.Label(pending.ToString(), htmlAttributes: new { @class = "form-control" })*@
             </div>
         </div>        
 
         <div class="form-group">
             @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+                <input id="Amount" type="text" name="Amount" class="form-control" />
+                @*@Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })*@
                 @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -104,7 +105,8 @@
         <div class="form-group">
             @Html.Label("Balance", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.Label(pending.ToString(), htmlAttributes: new { @class = "form-control" })
+                <input id="Balance" type="text" name="Balance" class="form-control" value="@pending.ToString()" readonly />
+                <input type="hidden" id="hidebal" name="hidebal" />
             </div>
         </div>
         <div class="form-group">
@@ -137,3 +139,28 @@
 <div>
 
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#Amount").keyup(function () {
+
+            //alert('pressed')
+            var a = $("#Pending").val();
+            //debugger;
+            var totalcost = $("#Pending").val() - $(this).val()
+            $("#Balance").val(totalcost);
+            $("#hidebal").val(totalcost);
+        })
+    });
+    $(document).ready(function () {
+
+        $("#Discount").keyup(function () {
+
+            //alert('pressed')
+            var a = $("#Pending").val();
+            //debugger;
+            var totalcost2 = $("#hidebal").val() - $(this).val()
+            $("#Balance").val(totalcost2);
+        })
+    });
+    </script>

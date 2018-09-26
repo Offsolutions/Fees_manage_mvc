@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MvcFeeManage.Areas.Auth.Models.Student_Course>
+﻿@model IEnumerable<MvcFeeManage.Areas.Auth.Models.Recipt_Details>
 
 @{
     ViewBag.Title = "Index";
@@ -7,9 +7,7 @@
 
 <h2><b>Index</b></h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -19,24 +17,18 @@
             @Html.DisplayNameFor(model => model.CourseId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Admitdate)
+            @Html.DisplayNameFor(model => model.ReciptNo)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.enddate)
+            @Html.DisplayNameFor(model => model.Date)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Fees)
+            @Html.DisplayNameFor(model => model.Amount)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Uid)
+            @Html.DisplayNameFor(model => model.Active)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RoomId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th></th>
+       @* <th></th>*@
     </tr>
 
 @foreach (var item in Model) {
@@ -48,28 +40,22 @@
             @Html.DisplayFor(modelItem => item.CourseId)
         </td>
         <td>
-            @Convert.ToDateTime(@item.Admitdate).ToString("dd - MM - yyyy")
+            @Html.DisplayFor(modelItem => item.ReciptNo)
         </td>
         <td>
-            @Convert.ToDateTime(@item.enddate).ToString("dd - MM - yyyy")
+            @Convert.ToDateTime(@item.Date).ToString(" dd - MM - yyyy")
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Fees)
+            @Html.DisplayFor(modelItem => item.Amount)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Uid)
+            @Html.DisplayFor(modelItem => item.Active)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RoomId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
+        @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
+        </td>*@
     </tr>
 }
 

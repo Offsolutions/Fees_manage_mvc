@@ -14,6 +14,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
     {
         private dbcontext db = new dbcontext();
         public static int rollno;
+
         // GET: Auth/AssignCourse
         public ActionResult Index(int roll)
         {

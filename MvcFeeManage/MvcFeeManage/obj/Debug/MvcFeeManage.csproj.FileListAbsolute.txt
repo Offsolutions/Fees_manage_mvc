@@ -259,4 +259,3 @@ G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.M
 G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csproj.GenerateResource.Cache
 G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.dll
 G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.pdb
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csprojResolveAssemblyReference.cache

@@ -214,6 +214,7 @@
     <Compile Include="Areas\Auth\Controllers\CoursesController.cs" />
     <Compile Include="Areas\Auth\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Auth\Controllers\DepositController.cs" />
+    <Compile Include="Areas\Auth\Controllers\InquiryController.cs" />
     <Compile Include="Areas\Auth\Controllers\LogsController.cs" />
     <Compile Include="Areas\Auth\Controllers\ReceiptController.cs" />
     <Compile Include="Areas\Auth\Controllers\roomsController.cs" />
@@ -735,6 +736,12 @@
     <Content Include="Areas\Auth\Views\AssignCourse\Index.cshtml" />
     <Content Include="Areas\Auth\Views\Logs\Index.cshtml" />
     <Content Include="Areas\Auth\Views\Deposit\Create.cshtml" />
+    <Content Include="Areas\Auth\Views\Deposit\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Inquiry\Create.cshtml" />
+    <Content Include="Areas\Auth\Views\Inquiry\Delete.cshtml" />
+    <Content Include="Areas\Auth\Views\Inquiry\Details.cshtml" />
+    <Content Include="Areas\Auth\Views\Inquiry\Edit.cshtml" />
+    <Content Include="Areas\Auth\Views\Inquiry\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

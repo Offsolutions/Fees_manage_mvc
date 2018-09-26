@@ -57,6 +57,13 @@ namespace MvcFeeManage.Areas.Auth.Models
         Male,
         Female
     }
+    public enum board
+    {
+        CBSE,
+        PSEB,
+        ICSE,
+        Other
+    }
     public enum type
     {
         AC,
@@ -116,7 +123,6 @@ namespace MvcFeeManage.Areas.Auth.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> Date { get; set; }
-        public string Particular { get; set; }
         public int Amount { get; set; }
         public bool Active { get; set; }
     }
@@ -162,5 +168,37 @@ namespace MvcFeeManage.Areas.Auth.Models
         public bool status { get; set; }
     }
 
-
+    public class tblinquiry
+    {
+        [Key]
+        public int Id { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime date { get; set; }
+        public string inquiryid { get; set; }
+        [Required]
+        public string name { get; set; }
+        public string fname { get; set; }
+        [RegularExpression(@"^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
+        public string contact { get; set; }
+        public string address { get; set; }
+        public string referedby { get; set; }
+        public string CourseId { get; set; }
+        public bool status { get; set; }
+    }
+    public class tblfeedback
+    {
+        [Key]
+        public int Id { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime date { get; set; }
+        public string inquiryid { get; set; }
+        public string feedback { get; set; }
+        public int days { get; set; }
+        public string type { get; set; }
+        public string nextfollow { get; set; }
+        public string status { get; set; }
+        public string loginid { get; set; }
+    }
 }

@@ -42,7 +42,7 @@
                         @Html.DisplayFor(modelItem => item.End_no)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Date)
+                        @Convert.ToDateTime(@item.Date).ToString(" dd - MM - yyyy")
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Current_Recipt)

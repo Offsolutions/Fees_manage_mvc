@@ -1,4 +1,4 @@
-﻿@model MvcFeeManage.Areas.Auth.Models.tblreceptionist
+﻿@model MvcFeeManage.Areas.Auth.Models.tblinquiry
 
 @{
     ViewBag.Title = "Details";
@@ -8,7 +8,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Account</h4>
+    <h4>Inquiry</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -20,6 +20,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.inquiryid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inquiryid)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.name)
         </dt>
 
@@ -28,11 +36,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.email)
+            @Html.DisplayNameFor(model => model.fname)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.email)
+            @Html.DisplayFor(model => model.fname)
         </dd>
 
         <dt>
@@ -44,43 +52,27 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.login)
+            @Html.DisplayNameFor(model => model.address)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.login)
+            @Html.DisplayFor(model => model.address)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.password)
+            @Html.DisplayNameFor(model => model.referedby)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.password)
+            @Html.DisplayFor(model => model.referedby)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.rid)
+            @Html.DisplayNameFor(model => model.CourseId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.rid)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.image)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.image)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Type)
+            @Html.DisplayFor(model => model.CourseId)
         </dd>
 
         <dt>

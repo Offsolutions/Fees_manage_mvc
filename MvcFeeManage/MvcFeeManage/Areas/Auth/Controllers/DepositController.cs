@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MvcFeeManage.Areas.Auth.Models;
 using onlineportal.Areas.AdminPanel.Models;
+using System.Data.Entity;
 
 namespace MvcFeeManage.Areas.Auth.Controllers
 {
@@ -12,10 +13,12 @@ namespace MvcFeeManage.Areas.Auth.Controllers
     {
         public dbcontext db = new dbcontext();
         public static int rollno;
+        public static string receiptno;
         // GET: Auth/Deposit
         public ActionResult Index()
         {
-            return View();
+            var recp = db.Recipt_Details.ToList();
+            return View(recp);
         }
 
         // GET: Auth/Deposit/Details/5
@@ -52,17 +55,37 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 var ab = db.Recipt_Details.Max(x => x.ReciptNo);
                 ViewBag.Receipt = Convert.ToInt32(ab) + 1;
             }
-
+            receiptno = ViewData["Receipt"].ToString();
             return View();
         }
 
         // POST: Auth/Deposit/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(int Amount, int Discount, string CourseId, DateTime Alert, DateTime date,Recipt_Details receiptdetail)
         {
             try
             {
                 // TODO: Add insert logic here
+                Fees_Master feesmaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == rollno);
+                feesmaster.discount = (Convert.ToInt32(feesmaster.discount) + Convert.ToInt32(Discount)).ToString();
+                feesmaster.Date = date;
+                feesmaster.AlertDate = Alert;
+                feesmaster.PaidFees += Amount;
+
+  
+                feesmaster.Status = true;
+                db.Entry(feesmaster).State = EntityState.Modified;
+                db.SaveChanges();
+
+                receiptdetail.RollNo = rollno;
+                receiptdetail.ReciptNo = receiptno;
+                receiptdetail.CourseId = CourseId;
+                receiptdetail.Date = date;
+                receiptdetail.Amount = Amount;
+                receiptdetail.Active = true;
+                db.Recipt_Details.Add(receiptdetail);
+                db.SaveChanges();
 
                 return RedirectToAction("Index");
             }

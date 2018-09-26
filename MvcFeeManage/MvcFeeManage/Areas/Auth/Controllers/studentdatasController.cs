@@ -31,6 +31,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             tblstudentdata tblstudentdata = db.tblstudentdata.Find(id);
+            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             if (tblstudentdata == null)
             {
                 return HttpNotFound();
@@ -122,7 +123,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,rollno,name,dob,fathername,address,phone,fatherphn,language,board,qualification,coaching,institutename,type,refferedby,image,uid,Status,username,password,gender,remarks,email,discount,date")] tblstudentdata tblstudentdata, HttpPostedFileBase file, Helper Help)
+        public ActionResult Edit([Bind(Include = "Id,name,dob,fathername,address,phone,fatherphn,language,board,qualification,coaching,institutename,type,refferedby,image,uid,Status,username,password,gender,remarks,email,discount,date")] tblstudentdata tblstudentdata, HttpPostedFileBase file, Helper Help)
         {
             if (ModelState.IsValid)
             {
@@ -155,7 +156,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             tblstudentdata tblstudentdata = db.tblstudentdata.Find(id);
-         
+            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             if (tblstudentdata == null)
             {
                 return HttpNotFound();
@@ -169,6 +170,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             tblstudentdata tblstudentdata = db.tblstudentdata.Find(id);
+            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             img = tblstudentdata.image;
             #region delete file
             string fullPath = Request.MapPath("~/UploadedFiles/" + img);
