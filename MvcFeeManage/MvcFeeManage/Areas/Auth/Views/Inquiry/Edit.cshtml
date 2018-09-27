@@ -7,7 +7,7 @@
 
 <h2>Edit</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Edit", "Inquiry", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     
@@ -91,7 +91,7 @@
         <div class="form-group">
             @Html.Label("Feed Back", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <textarea id="TextArea1" rows="2" cols="20" name="Feed" class="form-control"></textarea>
+                <textarea id="TextArea1" rows="2" cols="20" name="Feed" class="form-control" ></textarea>
             </div>
         </div>
 

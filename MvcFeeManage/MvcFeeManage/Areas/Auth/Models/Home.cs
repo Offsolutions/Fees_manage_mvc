@@ -197,8 +197,52 @@ namespace MvcFeeManage.Areas.Auth.Models
         public string feedback { get; set; }
         public int days { get; set; }
         public string type { get; set; }
-        public string nextfollow { get; set; }
+        public DateTime nextfollow { get; set; }
         public string status { get; set; }
         public string loginid { get; set; }
+    }
+    public class tblfill
+    {
+        [Key]
+        public int Id { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime date { get; set; }
+        public string name { get; set; }
+        public string passport { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime dob { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime doe { get; set; }
+        public string choice1 { get; set; }
+        public string choice2 { get; set; }
+        public string choice3 { get; set; }
+        public string module { get; set; }
+        public string v1 { get; set; }
+        public string v2 { get; set; }
+        public string v3 { get; set; }
+        public string mode { get; set; }
+        public string instname { get; set; }
+        public string status { get; set; }
+        public string fid { get; set; }
+        public string uname { get; set; }
+        public string pass { get; set; }
+    }
+    public enum module
+    {
+        GT,
+        AC,
+        PTE
+    }
+    public enum status
+    {
+        Idp,
+        British,
+        Booked,
+        Not_Booked,
+        Registered,
+        Walkin
     }
 }

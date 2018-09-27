@@ -29,7 +29,9 @@ namespace MvcFeeManage.Areas.Auth.Models
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.Student_Course> Student_Course { get; set; }
 
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.Recipt_Details> Recipt_Details { get; set; }
-
         public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblinquiry> tblinquiries { get; set; }
+        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblfeedback> tblfeedback { get; set; }
+
+        public System.Data.Entity.DbSet<MvcFeeManage.Areas.Auth.Models.tblfill> tblfills { get; set; }
     }
 }
