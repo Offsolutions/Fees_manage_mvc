@@ -10,8 +10,7 @@ namespace MvcFeeManage.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "MvcFeeManage.Areas.Auth.Models.dbcontext";
+
         }
 
         protected override void Seed(MvcFeeManage.Areas.Auth.Models.dbcontext context)

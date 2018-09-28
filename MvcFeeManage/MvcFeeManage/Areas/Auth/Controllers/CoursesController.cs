@@ -13,7 +13,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
     public class CoursesController : Controller
     {
         private dbcontext db = new dbcontext();
-        public static string coursid;
+        public static int coursid;
         // GET: Auth/Courses
         public ActionResult Index()
         {
@@ -53,12 +53,12 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 Course caos = db.Courses.FirstOrDefault();
                 if (caos == null)
                 {
-                    course.CourseId = "1001";
+                    course.CourseId = 1001;
                 }
                 else
                 {
                     var ab = db.Courses.Max(x => x.CourseId);
-                    course.CourseId = (Convert.ToInt32(ab) + 1).ToString();
+                    course.CourseId = (Convert.ToInt32(ab) + 1);
                 }
                 db.Courses.Add(course);
                 db.SaveChanges();

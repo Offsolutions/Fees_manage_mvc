@@ -21,7 +21,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             rollno = roll;
             var course = db.Courses.ToList();
             var room = db.tblrooms.ToList();
-            return View(db.Student_Course.Where(x => x.RollNo == roll).ToList());
+            return View(db.StudentCourse.Where(x => x.RollNo == roll).ToList());
         }
 
         // GET: Auth/AssignCourse/Details/5
@@ -31,7 +31,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student_Course student_Course = db.Student_Course.Find(id);
+            StudentCourse student_Course = db.StudentCourse.Find(id);
             if (student_Course == null)
             {
                 return HttpNotFound();
@@ -53,13 +53,13 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,RollNo,CourseId,Admitdate,enddate,Fees,Uid,RoomId,Status")] Student_Course student_Course)
+        public ActionResult Create([Bind(Include = "Id,RollNo,CourseId,Admitdate,enddate,Fees,Uid,RoomId,Status")] StudentCourse student_Course)
         {
             if (ModelState.IsValid)
             {
                 student_Course.Uid = Session["User"].ToString();
                 student_Course.RollNo = rollno;
-                db.Student_Course.Add(student_Course);
+                db.StudentCourse.Add(student_Course);
                 db.SaveChanges();  
 
                 Fees_Master feemaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == student_Course.RollNo);
@@ -84,7 +84,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student_Course student_Course = db.Student_Course.Find(id);
+            StudentCourse student_Course = db.StudentCourse.Find(id);
             rollno = student_Course.RollNo;
             ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             ViewBag.RoomId = new SelectList(db.tblrooms, "RoomId", "room");
@@ -100,7 +100,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,RollNo,CourseId,Admitdate,enddate,Fees,Uid,RoomId,Status")] Student_Course student_Course)
+        public ActionResult Edit([Bind(Include = "Id,RollNo,CourseId,Admitdate,enddate,Fees,Uid,RoomId,Status")] StudentCourse student_Course)
         {
             if (ModelState.IsValid)
             {
@@ -130,7 +130,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Student_Course student_Course = db.Student_Course.Find(id);
+            StudentCourse student_Course = db.StudentCourse.Find(id);
             rollno = student_Course.RollNo;
             if (student_Course == null)
             {
@@ -144,9 +144,9 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Student_Course student_Course = db.Student_Course.Find(id);
+            StudentCourse student_Course = db.StudentCourse.Find(id);
             rollno = student_Course.RollNo;
-            db.Student_Course.Remove(student_Course);
+            db.StudentCourse.Remove(student_Course);
             db.SaveChanges();
 
             Fees_Master feemaster = db.Fees_Master.FirstOrDefault(x => x.RollNo == student_Course.RollNo);

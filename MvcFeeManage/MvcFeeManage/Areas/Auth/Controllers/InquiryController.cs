@@ -40,9 +40,6 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // GET: Auth/Inquiry/Create
         public ActionResult Create()
         {
-            //IEnumerable<SelectListItem> courses = new SelectList(db.Courses.ToList(), "CourseId", "CourseName");
-
-            //ViewBag.CourseId = courses;
             ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             return View();
         }
@@ -52,7 +49,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,date,inquiryid,name,fname,contact,address,referedby,CourseId,status")] tblinquiry tblinquiry,string option,int days,string Feed,string Status2)
+        public ActionResult Create([Bind(Include = "Id,date,inquiryid,name,fname,contact,address,referedby,CourseId,status")] tblinquiry tblinquiry)
         {
             if (ModelState.IsValid)
             {
@@ -71,39 +68,6 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 tblinquiry.status = true;
                 db.tblinquiries.Add(tblinquiry);
                 db.SaveChanges();
-
-                tblfeedback feedback = new tblfeedback();
-                DateTime next = new DateTime();
-                if (option== "Days")
-                {
-                     next = System.DateTime.Now.AddDays(days);
-                    //    System.DateTime.Now.AddDays(Convert.ToInt32(days)).ToString("MM/dd/yyyy");
-                }
-                else if (option == "Month")
-                {
-                    next = System.DateTime.Now.AddMonths(days);
-
-                }
-                else if (option == "Year")
-                {
-                    next = System.DateTime.Now.AddYears(days);
-                }
-                else
-                {
-                    next = System.DateTime.Now;
-                }
-              
-                feedback.date = tblinquiry.date;
-                feedback.inquiryid = tblinquiry.inquiryid;
-                feedback.loginid= Session["User"].ToString();
-                feedback.status = Status2;
-                feedback.type = option;
-                feedback.days = days;
-                feedback.feedback = Feed;
-                feedback.nextfollow = next;
-                db.tblfeedback.Add(feedback);
-                db.SaveChanges();
-
                 return RedirectToAction("Index");
             }
 
@@ -119,8 +83,6 @@ namespace MvcFeeManage.Areas.Auth.Controllers
             }
             tblinquiry tblinquiry = db.tblinquiries.Find(id);
             ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
-            tblfeedback tbfeedback = db.tblfeedback.FirstOrDefault(x => x.inquiryid == tblinquiry.inquiryid);
-            ViewBag.feedback = tbfeedback;
             if (tblinquiry == null)
             {
                 return HttpNotFound();

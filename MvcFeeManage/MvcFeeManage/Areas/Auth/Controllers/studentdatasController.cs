@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MvcFeeManage.Areas.Auth.Models;
 using onlineportal.Areas.AdminPanel.Models;
+using System.Web.Script.Serialization;
 
 namespace MvcFeeManage.Areas.Auth.Controllers
 {
@@ -52,7 +53,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,rollno,name,dob,fathername,address,phone,fatherphn,language,board,qualification,coaching,institutename,type,refferedby,image,uid,Status,username,password,gender,remarks,email,discount,date")] tblstudentdata tblstudentdata, HttpPostedFileBase file, Helper Help,DateTime joining,DateTime enddate,string addmission,string CourseId,int RoomId)
+        public ActionResult Create([Bind(Include = "Id,rollno,name,dob,fathername,address,phone,fatherphn,language,board,qualification,coaching,institutename,type,refferedby,image,uid,Status,username,password,gender,remarks,email,discount,date")] tblstudentdata tblstudentdata, HttpPostedFileBase file, Helper Help,DateTime joining,DateTime enddate,string addmission,int CourseId,int RoomId)
         {
             if (ModelState.IsValid)
             {
@@ -84,7 +85,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 db.Fees_Master.Add(feemaster);
                 db.SaveChanges();
 
-                Student_Course studentcourse = new Student_Course();
+                StudentCourse studentcourse = new StudentCourse();
                 studentcourse.RollNo = tblstudentdata.rollno;
                 studentcourse.RoomId = RoomId;
                 studentcourse.CourseId = CourseId;
@@ -93,7 +94,7 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 studentcourse.Fees = addmission;
                 studentcourse.Uid = Session["User"].ToString();
                 studentcourse.Status = true;
-                db.Student_Course.Add(studentcourse);
+                db.StudentCourse.Add(studentcourse);
                 db.SaveChanges();
 
                 return RedirectToAction("Index");
@@ -205,6 +206,16 @@ namespace MvcFeeManage.Areas.Auth.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        public ActionResult Fee(int stateID)
+        {
+            db.Configuration.ProxyCreationEnabled = false;
+            List<Course> Course = new List<Course>();
+
+            Course = (db.Courses.Where(x => x.CourseId == stateID)).ToList();
+            JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
+            string result = javaScriptSerializer.Serialize(Course);
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
     }
 }

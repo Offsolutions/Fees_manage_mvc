@@ -1,261 +1,82 @@
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\ApplicationInsights.config
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\csc.exe
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Collections.Immutable.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\vbc.exe
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe.config
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll.config
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.pdb
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Agent.Intercept.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.PerfCounterCollector.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Web.Infrastructure.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Owin.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\WebGrease.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.pdb
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csprojResolveAssemblyReference.cache
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.dll
-c:\users\admin\documents\visual studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.pdb
-G:\Github\MvcFeeManage\MvcFeeManage\bin\ApplicationInsights.config
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\csc.exe
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CSharp.Core.targets
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.VisualBasic.Core.targets
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Collections.Immutable.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Reflection.Metadata.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\vbc.exe
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe
-G:\Github\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe.config
-G:\Github\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll.config
-G:\Github\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.pdb
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\EntityFramework.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Agent.Intercept.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.PerfCounterCollector.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Web.Infrastructure.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Owin.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\WebGrease.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.pdb
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\EntityFramework.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-G:\Github\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.dll
-G:\Github\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.pdb
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Net.Http.Formatting.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.WebHost.dll
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Net.Http.Formatting.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.xml
-G:\Github\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.WebHost.xml
-G:\Github\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.Migrations.InitialCreate.resources
-G:\Github\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csproj.GenerateResource.Cache
-G:\Github\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csprojResolveAssemblyReference.cache
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\ApplicationInsights.config
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\csc.exe
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CSharp.Core.targets
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.VisualBasic.Core.targets
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Collections.Immutable.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Reflection.Metadata.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\vbc.exe
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe.config
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll.config
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.pdb
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\EntityFramework.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Agent.Intercept.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.PerfCounterCollector.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Web.Infrastructure.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Owin.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Net.Http.Formatting.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.WebHost.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\WebGrease.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Net.Http.Formatting.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Http.WebHost.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.pdb
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\EntityFramework.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.Migrations.InitialCreate.resources
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csproj.GenerateResource.Cache
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.dll
-G:\new github\Fees_manage_mvc\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.pdb
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\ApplicationInsights.config
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\csc.exe
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\vbc.exe
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll.config
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\MvcFeeManage.pdb
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Owin.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\WebGrease.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.Web.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.ApplicationInsights.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Helpers.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Mvc.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Optimization.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.Razor.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Deployment.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\System.Web.WebPages.Razor.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Antlr3.Runtime.pdb
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Newtonsoft.Json.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\EntityFramework.SqlServer.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.dll
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.pdb
+C:\Users\deep\Documents\Visual Studio 2015\Projects\MvcFeeManage\MvcFeeManage\obj\Debug\MvcFeeManage.csprojResolveAssemblyReference.cache

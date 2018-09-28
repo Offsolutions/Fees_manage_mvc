@@ -88,17 +88,38 @@ namespace MvcFeeManage.Areas.Auth.Models
     {
         [Key]
         public int Id { get; set; }
-        public string CourseId { get; set; }
+        public int CourseId { get; set; }
         public string CourseName { get; set; }
         public string Fees { get; set; }
         //public virtual ICollection<Student_Course> Student_Course { get; set; }
     }
-    public class Student_Course
+    //public class Student_Course
+    //{
+    //    [Key]
+    //    public int Id { get; set; }
+    //    public int RollNo { get; set; }
+    //    public string CourseId { get; set; }
+
+    //    [DataType(DataType.Date)]
+    //    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+    //    public Nullable<System.DateTime> Admitdate { get; set; }
+
+    //    [DataType(DataType.Date)]
+    //    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+    //    public Nullable<System.DateTime> enddate { get; set; }
+    //    public string Fees { get; set; }
+    //    public string Uid { get; set; }
+    //    public int RoomId { get; set; }
+    //    public bool Status { get; set; }
+
+    //}
+
+    public class StudentCourse
     {
         [Key]
         public int Id { get; set; }
         public int RollNo { get; set; }
-        public string CourseId { get; set; }
+        public int CourseId { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
@@ -145,7 +166,7 @@ namespace MvcFeeManage.Areas.Auth.Models
         public int RoomId { get; set; }
         public string room { get; set; }
         public bool status { get; set; }
-        public virtual ICollection<Student_Course> Student_Course { get; set; }
+        public virtual ICollection<StudentCourse> StudentCourse { get; set; }
     }
     public class tblreceptionist
     {
@@ -197,52 +218,8 @@ namespace MvcFeeManage.Areas.Auth.Models
         public string feedback { get; set; }
         public int days { get; set; }
         public string type { get; set; }
-        public DateTime nextfollow { get; set; }
+        public string nextfollow { get; set; }
         public string status { get; set; }
         public string loginid { get; set; }
-    }
-    public class tblfill
-    {
-        [Key]
-        public int Id { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime date { get; set; }
-        public string name { get; set; }
-        public string passport { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime dob { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime doe { get; set; }
-        public string choice1 { get; set; }
-        public string choice2 { get; set; }
-        public string choice3 { get; set; }
-        public string module { get; set; }
-        public string v1 { get; set; }
-        public string v2 { get; set; }
-        public string v3 { get; set; }
-        public string mode { get; set; }
-        public string instname { get; set; }
-        public string status { get; set; }
-        public string fid { get; set; }
-        public string uname { get; set; }
-        public string pass { get; set; }
-    }
-    public enum module
-    {
-        GT,
-        AC,
-        PTE
-    }
-    public enum status
-    {
-        Idp,
-        British,
-        Booked,
-        Not_Booked,
-        Registered,
-        Walkin
     }
 }
