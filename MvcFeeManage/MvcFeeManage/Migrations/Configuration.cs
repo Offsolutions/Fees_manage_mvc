@@ -10,6 +10,7 @@ namespace MvcFeeManage.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
 
         }
 
